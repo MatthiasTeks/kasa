@@ -1,0 +1,57 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: var(--inline);
+    height: 100px;
+}
+
+#holder-logo {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+    max-height: 100px;
+}
+
+#holder-logo img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    margin-inline: 16px;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    border-bottom: 1px solid red;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: var(--black);
+    height: 200px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div p {
+    color: var(--white);
+    padding-top: 1em;
+}

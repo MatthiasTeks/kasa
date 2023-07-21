@@ -1,0 +1,31 @@
+#error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 100px - 200px);
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding-block: 5em;
+
+        span {
+            font-size: 120px;
+            font-weight: bold;
+        }
+
+        >p {
+            font-size: 24px;
+        }
+
+        a > p {
+            text-decoration: underline;
+        }
+    }
+}
+
+

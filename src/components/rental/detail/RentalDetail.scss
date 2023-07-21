@@ -1,0 +1,116 @@
+.rental-detail {
+    margin-inline: var(--inline);
+    margin-bottom: 2em;
+}
+.rental-gallery {
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+    margin-bottom: 42px;
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        width: 3vw;
+    }
+
+    .arrow-left {
+        left: 5%;
+    }
+
+    .rental-picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .arrow-right {
+        right: 5%;
+    }
+}
+
+.rental-primary-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    .primary-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        h3 {
+            font-size: 26px;
+            font-weight: 300;
+        }
+
+        p {
+            padding-top: 0.5em;
+            font-size: 18px;
+        }
+    }
+
+    .primary-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        p {
+            padding-right: 0.5em;
+            font-size: 18px;
+            width: 50%;
+            text-align: right;
+        }
+        >div {
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.rental-secondary-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+  
+    .info-tags > span {
+      background: var(--primary-color);
+      color: var(--white);
+      border-radius: 10px;
+      padding: 0.35em 1em;
+  
+      &:not(:first-child) {
+        margin-left: 0.5em;
+      }
+    }
+}
+
+.rental-tertiary-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1em;
+
+    .collapse {
+        flex: 0 1 calc(50% - 20px);
+    }
+}

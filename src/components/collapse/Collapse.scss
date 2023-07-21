@@ -1,0 +1,41 @@
+.collapse {
+    background: var(--primary-color);
+    border-radius: 10px;
+
+    p {
+        color: var(--white);
+    }
+
+    >div:first-of-type {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.25em 0.50em;
+    }
+
+    .arrow-collapse {
+        transition: transform 0.25s ease-in;
+    }
+
+    img.open {
+        transform: rotate(180deg);
+        transform-origin: center;
+    }
+
+    .collapse-opened {
+        background-color: var(--gray);
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+        max-height: 0;
+        
+        p {
+            color: var(--primary-color);
+            padding: 1em;
+        }
+    }
+
+    .collapse-opened.open {
+        max-height: 500px;
+    }
+}
